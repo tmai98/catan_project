@@ -42,12 +42,12 @@ string gameBoard::render(int line){
             return ss.str();        // Returns the String Stream.
             break;
             }
-        case 3: return "|   _____   |";
-        case 4: return "|  /     \\  |";
-        case 5: return "| /_  0  _\\ |";
-        case 6: return "|   |   |   |";
-        case 7: return "|   |___|   |";
-        case 8: return "|___________|";
+        case 2: return "|   _____   |";
+        case 3: return "|  /     \\  |";
+        case 4: return "| /_  0  _\\ |";
+        case 5: return "|   |   |   |";
+        case 6: return "|   |___|   |";
+        case 7: return "|___________|";
                 break;
         default:
             return " ";
