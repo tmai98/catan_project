@@ -1,5 +1,23 @@
 #include "board.h"
 
+// TODO: Add set commands.
+
+// Default Card
+string Card::render(int line){
+    switch(line){
+        case 0: return ".___________.";
+        case 1: return "|           |";
+        case 2: return "|           |";
+        case 3: return "|           |";
+        case 4: return "|           |";
+        case 5: return "|           |";
+        case 6: return "|           |";
+        case 7: return "|___________|";
+        default:
+            return " ";
+    }
+}
+
 string gameBoard::render(int line){
     stringstream ss;
     switch(line){
@@ -24,13 +42,12 @@ string gameBoard::render(int line){
             return ss.str();        // Returns the String Stream.
             break;
             }
-        case 3: return "|           |";
-        case 4: return "|           |";
-        case 5: return "|           |";
-        case 6: return "|           |";
-        case 7: return "|           |";
+        case 3: return "|   _____   |";
+        case 4: return "|  /     \\  |";
+        case 5: return "| /_  0  _\\ |";
+        case 6: return "|   |   |   |";
+        case 7: return "|   |___|   |";
         case 8: return "|___________|";
-            // include house to card if claimed.
                 break;
         default:
             return " ";
