@@ -23,10 +23,16 @@ string gameBoard::render(int line){
                     break;
             return ss.str();        // Returns the String Stream.
             break;
-        case 3:    
-            // TODO: Bottom of Card. Somehow include house to card if claimed.
+            }
+        case 3: return "|           |";
+        case 4: return "|           |";
+        case 5: return "|           |";
+        case 6: return "|           |";
+        case 7: return "|           |";
+        case 8: return "|___________|";
+            // include house to card if claimed.
                 break;
         default:
             return " ";
     }
-}
+}   
