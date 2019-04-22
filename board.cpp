@@ -43,8 +43,8 @@ string gameBoard::render(int line){
             break;
             }
         case 2: return "|   _____   |";
-        case 3: return "|  /     \\  |";  // There is two dashes on the right side because that is the only the backshash would work like one slash.
-        case 4: return "| /_  0  _\\ |";  // It will not affect the way the board looks. One of the slashes will disappear
+        case 3: return "|  /     \\  |";        // There is two dashes on the right side because that is the only the backshash would work like one slash.
+        case 4: return "| /_  0  _\\ |";        // It will not affect the way the board looks. One of the slashes will disappear
         case 5: return "|   |   |   |";
         case 6: return "|   |___|   |";
         case 7: return "|___________|";
